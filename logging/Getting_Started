@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Proxylizer/Getting Started - MikroTik Wiki</title>
+<meta name="generator" content="MediaWiki 1.24.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="MikroTik Wiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.mikrotik.com/api.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="/wiki/Proxylizer/Getting_Started" />
+<link rel="alternate" type="application/atom+xml" title="MikroTik Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://wiki.mikrotik.com/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://wiki.mikrotik.com/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wiki:resourceloader:filter:minify-css:7:29b70323345a439ab9ed7007e0c178a6 */</style>
+<script src="http://wiki.mikrotik.com/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Proxylizer/Getting_Started","wgTitle":"Proxylizer/Getting Started","wgCurRevisionId":21745,"wgRevisionId":21745,"wgArticleId":3296,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Manual","Proxy"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Proxylizer/Getting_Started","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":true,"searchNs101":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});},{},{});
+/* cache key: wiki:resourceloader:filter:minify-js:7:492845b23eb98c5a23bd904c8b55710b */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Proxylizer_Getting_Started skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Proxylizer/Getting Started</span></h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From MikroTik Wiki</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="/wiki/Proxylizer" title="Proxylizer">Proxylizer</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Download"><span class="tocnumber">1</span> <span class="toctext">Download</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Scripts_for_install_method_1"><span class="tocnumber">1.1</span> <span class="toctext">Scripts for  install method 1</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#VMware_image_download_for_install_method_2"><span class="tocnumber">1.2</span> <span class="toctext">VMware image download for  install method 2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Install"><span class="tocnumber">2</span> <span class="toctext">Install</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Mikrotik_router"><span class="tocnumber">2.1</span> <span class="toctext">Mikrotik router</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Web-proxy_log_export_to_remote_host_.28Proxylizer_server.29"><span class="tocnumber">2.1.1</span> <span class="toctext">Web-proxy log export to remote host (Proxylizer server)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="#Proxylizer_server"><span class="tocnumber">2.2</span> <span class="toctext">Proxylizer server</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Install_method_1"><span class="tocnumber">2.2.1</span> <span class="toctext">Install method 1</span></a>
+<ul>
+<li class="toclevel-4 tocsection-9"><a href="#Required_packages"><span class="tocnumber">2.2.1.1</span> <span class="toctext">Required packages</span></a></li>
+<li class="toclevel-4 tocsection-10"><a href="#Web_page_scripts"><span class="tocnumber">2.2.1.2</span> <span class="toctext">Web page scripts</span></a></li>
+<li class="toclevel-4 tocsection-11"><a href="#Permissions_for_directories"><span class="tocnumber">2.2.1.3</span> <span class="toctext">Permissions for directories</span></a></li>
+<li class="toclevel-4 tocsection-12"><a href="#Syslog_daemon"><span class="tocnumber">2.2.1.4</span> <span class="toctext">Syslog daemon</span></a></li>
+<li class="toclevel-4 tocsection-13"><a href="#MySQL_user_for_proxylizer_database"><span class="tocnumber">2.2.1.5</span> <span class="toctext">MySQL user for proxylizer database</span></a></li>
+<li class="toclevel-4 tocsection-14"><a href="#Scheduled_scripts_for_forwarding_records_from_syslog_to_MySQL_and_report_generation"><span class="tocnumber">2.2.1.6</span> <span class="toctext">Scheduled scripts for forwarding records from syslog to MySQL and report generation</span></a></li>
+<li class="toclevel-4 tocsection-15"><a href="#Database_and_web_page_access_configuration"><span class="tocnumber">2.2.1.7</span> <span class="toctext">Database and web page access configuration</span></a></li>
+<li class="toclevel-4 tocsection-16"><a href="#Mail_sending_configuration"><span class="tocnumber">2.2.1.8</span> <span class="toctext">Mail sending configuration</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-17"><a href="#Install_method_2"><span class="tocnumber">2.2.2</span> <span class="toctext">Install method 2</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#First_report"><span class="tocnumber">3</span> <span class="toctext">First report</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Download">Download</span></h2>
+<h4><span class="mw-headline" id="Scripts_for_install_method_1">Scripts for <a href="/wiki/Proxylizer/Getting_Started#Install_method_1" title="Proxylizer/Getting Started"> install method 1</a></span></h4>
+<p>You can download proxylizer archive <a rel="nofollow" class="external text" href="http://www.mikrotik.com/download/proxylizer/proxylizer_0.1.1b.tar.gz">here</a>
+</p>
+<h4><span class="mw-headline" id="VMware_image_download_for_install_method_2">VMware image download for <a href="/wiki/Proxylizer/Getting_Started#Install_method_2" title="Proxylizer/Getting Started"> install method 2</a></span></h4>
+<p>There are 2 ways to download this image file (318 MB)&#160;:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.mikrotik.com/download/proxylizer_vmware_image.zip">direct download</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.mikrotik.com/download/proxylizer_01b_vmware.torrent">torrent network</a></li></ul>
+<h2><span class="mw-headline" id="Install">Install</span></h2>
+<p>All the examples assume that Proxylizer server IP address is 10.1.1.2 and syslog-ng uses port 514 that is its default
+</p><p>The installation includes steps for setting up the following:
+</p>
+<ul><li> <a href="/wiki/Proxylizer/Getting_Started#Mikrotik_router" title="Proxylizer/Getting Started"> Mikrotik router:</a>
+<ul><li> <a href="/wiki/Proxylizer/Getting_Started#Web-proxy_log_export_to_remote_host_.28Proxylizer_server.29" title="Proxylizer/Getting Started"> Web-proxy log export to remote host</a></li></ul></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Proxylizer_server" title="Proxylizer/Getting Started"> Proxylizer server:</a>
+<ul><li> <a href="/wiki/Proxylizer/Getting_Started#Install_method_1" title="Proxylizer/Getting Started"> Method 1</a>
+<ul><li> <a href="/wiki/Proxylizer/Getting_Started#Required_packages" title="Proxylizer/Getting Started"> Required packages</a></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Web_page_scripts" title="Proxylizer/Getting Started"> Web page scripts</a></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Permissions_for_directories" title="Proxylizer/Getting Started"> Permissions for directories</a></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Syslog_daemon" title="Proxylizer/Getting Started"> Syslog deamon</a></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#MySQL_user_for_proxylizer_database" title="Proxylizer/Getting Started"> MySQL user for proxylizer database</a></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Scheduled_scripts_for_forwarding_records_from_syslog_to_MySQL_and_report_generation" title="Proxylizer/Getting Started"> Scheduled scripts for forwarding records and report generation</a></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Database_and_web_page_access_configuration" title="Proxylizer/Getting Started"> Database and web page access configuration</a></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Mail_sending_configuration" title="Proxylizer/Getting Started"> Mail sending configuration</a></li></ul></li>
+<li> <a href="/wiki/Proxylizer/Getting_Started#Install_method_2" title="Proxylizer/Getting Started"> Method 2</a></li></ul></li></ul>
+<h3><span class="mw-headline" id="Mikrotik_router">Mikrotik router</span></h3>
+<h4><span class="mw-headline" id="Web-proxy_log_export_to_remote_host_.28Proxylizer_server.29">Web-proxy log export to remote host (Proxylizer server)</span></h4>
+<p>To forward logs from Mikrotik Router to Proxylizer server, open RouterOS console and type in the following commands (assuming that Proxylizer Server IP Address is 10.1.1.2):
+</p>
+<pre>/system logging action add name=sendToProxylizer target=remote remote=10.1.1.2:514
+/system logging add topics=web-proxy,!debug action=sendToProxylizer</pre>
+<p>Note that logs are sent to port number 514, it must be equal with the port on which Syslog daemon on Proxylizer server is listening.
+</p><p><b>And then just set up web proxy:</b>
+</p><p>[admin@Proxylizer pruebas] &gt; ip
+[admin@Proxylizer pruebas] /ip&gt; proxy
+[admin@Proxylizer pruebas] /ip proxy&gt; print
+</p>
+<pre>                enabled: yes
+            src-address: 0.0.0.0
+                   port: 8080
+           parent-proxy: 0.0.0.0
+      parent-proxy-port: 0
+    cache-administrator: "webmaster"
+         max-cache-size: none
+          cache-on-disk: no
+ max-client-connections: 600
+ max-server-connections: 600
+         max-fresh-time: 3d
+  serialize-connections: no
+      always-from-cache: no
+         cache-hit-dscp: 4
+            cache-drive: system
+</pre>
+<p><b>and redirect the traffic to the web proxy:</b>
+</p><p>[admin@Proxylizer pruebas] /ip firewall nat&gt; print
+Flags: X - disabled, I - invalid, D - dynamic 
+</p>
+<pre>0   chain=dstnat action=redirect to-ports=8080 protocol=tcp dst-port=80
+</pre>
+<p><b>Note: remember protect the  proxy</b>
+</p>
+<h3><span class="mw-headline" id="Proxylizer_server">Proxylizer server</span></h3>
+<h4><span class="mw-headline" id="Install_method_1">Install method 1</span></h4>
+<p>All the examples assume that web page root directory is "/var/www/proxylizer", web server user is "www-data", Proxylizer server system user is "proxylizer" and .pipe file destination/name is "/home/proxylizer/mysql.pipe".
+</p>
+<h5><span class="mw-headline" id="Required_packages">Required packages</span></h5>
+<ul><li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Syslog-ng">Syslog-ng</a> daemon</li>
+<li>Web server with <a rel="nofollow" class="external text" href="http://www.php.net">PHP</a> and <a rel="nofollow" class="external text" href="http://pear.php.net/">PHP-Pear</a>
+<ul><li><a rel="nofollow" class="external text" href="http://httpd.apache.org/">Apache2</a> (recomended), <a rel="nofollow" class="external text" href="http://www.php.net">PHP5</a>, <a rel="nofollow" class="external text" href="http://lv.php.net/features.commandline">PHP5-cli</a> and <a rel="nofollow" class="external text" href="http://pear.php.net/">PHP-Pear</a>&#160;: DB, Mail, Mail_Mime and Net_SMTP packages</li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.mysql.com">MySQL</a> database server</li></ul>
+<p>For Ubuntu issue this command to install all required packages:
+</p>
+<pre>sudo apt-get install syslog-ng libapache2-mod-php5 php5-cli php-pear php-db php-mail php-mail-mime php-net-smtp php5-mysql mysql-server mysql-client</pre>
+<p>WARNING&#160;: If you have Ubuntu syslog-ng can conflict with ubuntu-minimal package! You can remove this package.
+</p>
+<h5><span class="mw-headline" id="Web_page_scripts">Web page scripts</span></h5>
+<p><a href="/wiki/Proxylizer/Getting_Started#Download" title="Proxylizer/Getting Started"> Download</a> proxylizer archive. Create directory and extract it in web page root directory:
+</p>
+<pre>sudo tar -xvzf  proxylizer.tar.gz -C /var/www/</pre>
+<h5><span class="mw-headline" id="Permissions_for_directories">Permissions for directories</span></h5>
+<p>Change ownership of web page root directory for web server user:
+</p>
+<pre> chown proxylizer:www-data /var/www/proxylizer -R </pre>
+<p>Set write permissions to web page root directory for web server user:
+</p>
+<pre> chmod g+w /var/www/proxylizer -R</pre>
+<p>Set permissions to execute 3 shell script files for web server user group:
+</p>
+<pre>
+cd /var/www/proxylizer
+chmod ug+x checkwebproxy.sh mail_send.php webproxylogtomysql.php
+</pre>
+<h5><span class="mw-headline" id="Syslog_daemon">Syslog daemon</span></h5>
+<p>Change syslog-ng config to receive logs from Mikrotik router and put them into mysql.pipe file. Open /etc/syslog-ng/syslog-ng.conf and add these lines next to "#destinations"&#160;:
+</p>
+<pre>
+destination d_mysql {
+pipe(&quot;/home/proxylizer/mysql.pipe&quot;
+template(&quot;$HOST $YEAR-$MONTH-$DAY $HOUR:$MIN:$SEC $MSG\n&quot;) template-escape(yes));
+};
+log { source(net); destination(d_mysql); };
+</pre>
+<p>And this line next to "#sources":
+</p>
+<pre>source net { udp(); };</pre>
+<p>Create pipe file:
+</p>
+<pre>mkfifo /home/proxylizer/mysql.pipe</pre>
+<p>Set destination of .pipe file in /var/www/proxylizer/webproxylogtomysql.php. At the beginning of the file you must change variable value in the line:
+</p>
+<pre>$MYSQL_PIPE = &quot;/home/proxylizer/mysql.pipe&quot;;</pre>
+<p>restart syslog:
+</p>
+<pre>/etc/init.d/syslog-ng restart</pre>
+<p><b>Note:</b> The last version of Syslog-NG don't project the string "web-proxy,account" to the pipe, so the $rawlog[] depending variables from the php script are bad setted. If you use syslog-ng 3.1.x or more please use this line to avoid problem:
+</p>
+<pre>
+destination d_mysql {
+pipe(&quot;/home/proxylizer/mysql.pipe&quot;
+template(&quot;$HOST $YEAR-$MONTH-$DAY $HOUR:$MIN:$SEC web-proxy,account $MSG\n&quot;) template-escape(yes));
+};
+log { source(net); destination(d_mysql); };
+</pre>
+<h5><span class="mw-headline" id="MySQL_user_for_proxylizer_database">MySQL user for proxylizer database</span></h5>
+<p>Default user name for mysql database is root with no password. But we recomend to change it for security reasons.<br /> To create new database <code>proxylizerdb</code> and user <code>proxylizer</code> with password <code>passwd</code> connect to mysql server, using command:
+</p>
+<pre>mysql -u root</pre>
+<p>and issue the following commands in mysql frontend:
+</p>
+<pre>
+CREATE DATABASE proxylizerdb;
+GRANT ALL PRIVILEGES ON proxylizerdb.* TO proxylizer@localhost IDENTIFIED BY &quot;password&quot; WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+</pre>
+<p>If you use mysql user other than root without password, connect to mysql server, using
+</p>
+<pre>
+mysql -u usrname -p
+</pre>
+<p>and you will be asked to enter the mysql user's password.
+</p>
+<h5><span class="mw-headline" id="Scheduled_scripts_for_forwarding_records_from_syslog_to_MySQL_and_report_generation">Scheduled scripts for forwarding records from syslog to MySQL and report generation</span></h5>
+<p>Create directory for script logs and set permesions:
+</p>
+<pre>
+sudo mkdir /var/log/proxylizer
+sudo chown proxylizer:proxylizer /var/log/proxylizer
+sudo chmod u+w /var/log/proxylizer
+</pre>
+<p>If you want to write logs in different directory you must edit bash script "checkwebproxy.sh" and change "/var/log/proxylizer" to preferred  directory.
+</p><p>Put two scripts in cron sheduler. First create crontab file for web server system user:
+</p>
+<pre>
+nano /home/proxylizer/proxylizercrontab
+</pre>
+<p>and copy these lines:
+</p>
+<pre>
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+* *     * * *           /var/www/proxylizer/mail_send.php &gt;&gt; /var/log/proxylizer/mail_send_log.log
+* *     * * *           /var/www/proxylizer/checkwebproxy.sh &gt;&gt; /var/log/proxylizer/checkwebproxy.log &amp;
+</pre>
+<p>Set scheduler tasks from this file:
+</p>
+<pre>crontab /home/proxylizer/proxylizercrontab</pre>
+<h5><span class="mw-headline" id="Database_and_web_page_access_configuration">Database and web page access configuration</span></h5>
+<p>When all previous settings is set. Open web browser and point it to proxylizer server. First page must be like this&#160;:
+</p><p><a href="/wiki/File:Setup.png" class="image"><img alt="Setup.png" src="/images/9/98/Setup.png" width="385" height="252" /></a>
+</p>
+<ul><li>DB type - for now Proxylizer supports only MySQL, in future PostgreSQL, Interbase and other data bases will be added;</li>
+<li>DB host - by default "localhost", i.e,. database is located on the Proxylizer server;</li>
+<li>DB name - by default "proxylizer", must be equal with the one set <a href="/wiki/Proxylizer/Getting_Started#MySQL_user_for_proxylizer_database" title="Proxylizer/Getting Started"> here</a>;</li>
+<li>DB username and password - as you have set <a href="/wiki/Proxylizer/Getting_Started#MySQL_user_for_proxylizer_database" title="Proxylizer/Getting Started"> here</a>;</li>
+<li>Webpage username and password - as you prefer;</li></ul>
+<p>Setup page is shown always when the config file <code>config_constants.php</code> is not found in the Proxylizer root directory. On successful setup the configuration is written to this file. Configuration file contains database access and web page access parameters, no <a href="/wiki/Proxylizer/Concepts#Reports" title="Proxylizer/Concepts"> report</a> or <a href="/wiki/Proxylizer/Concepts#IP_Users" title="Proxylizer/Concepts"> IP user</a> configuration is included.
+</p>
+<h5><span class="mw-headline" id="Mail_sending_configuration">Mail sending configuration</span></h5>
+<p>To start receive reports to email, go to <a href="/wiki/Proxylizer/Web_Page#IP_users" title="Proxylizer/Web Page"> IP users</a> page and add user with email address, then to <a href="/wiki/Proxylizer/Web_Page#Config" title="Proxylizer/Web Page"> Config</a> page and configure Mail server access (any SMTP account needed).
+</p>
+<h4><span class="mw-headline" id="Install_method_2">Install method 2</span></h4>
+<p>It is posible to download already installed linux(debian) and proxylizer VMware virtual machine image and use proxylizer on any platform supported by VMware.
+</p>
+<ul><li>Download <a rel="nofollow" class="external text" href="http://www.vmware.com/download/player/">VMware player</a>.</li>
+<li><a href="/wiki/Proxylizer/Getting_Started#Download" title="Proxylizer/Getting Started"> Download</a> archived VMware proxylizer image</li>
+<li>Network settings:
+<ul><li> if not in DHCP network open /etc/network/interfaces and change address, netmask, gateway etc.</li></ul></li>
+<li>Passwords and usernames&#160;:
+<ul><li> root password "rootroot";</li>
+<li> username - "proxylizer", password - "rootroot";</li>
+<li> mysql: root password - "proxylizer"; proxylizer data base username - "proxylizer", password - "password";</li>
+<li> webpage: username- "proxylizer", password - "rootroot";</li></ul></li></ul>
+<h2><span class="mw-headline" id="First_report">First report</span></h2>
+<p>First read documentation of web interface <a href="/wiki/Proxylizer/Web_Page#Reports" title="Proxylizer/Web Page"> here</a>. If you wan't to just check users web usage - create once report for date interval you are interested in and after a few moments report will be ready. If you wan't to see all users visited domains - create domain report, but remember it is only possible to get report for date interval which is already passed. For example if you want data for today  report will be generated only tomorrow.
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.064 seconds
+Real time usage: 0.068 seconds
+Preprocessor visited node count: 241/1000000
+Preprocessor generated node count: 456/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:3296-0!*!0!!en!5!* and timestamp 20160724233048 and revision id 21745
+ -->
+</div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://wiki.mikrotik.com/index.php?title=Proxylizer/Getting_Started&amp;oldid=21745">http://wiki.mikrotik.com/index.php?title=Proxylizer/Getting_Started&amp;oldid=21745</a>"					</div>
+													<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Manual" title="Category:Manual">Manual</a></li><li><a href="/wiki/Category:Proxy" title="Category:Proxy">Proxy</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Proxylizer%2FGetting+Started" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Proxylizer/Getting_Started"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/index.php?title=Talk:Proxylizer/Getting_Started&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span>Variants</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Proxylizer/Getting_Started" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Proxylizer/Getting_Started&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Proxylizer/Getting_Started&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search MikroTik Wiki [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a style="background-image: url(http://i.mt.lv/logowiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li>
+													<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Proxylizer/Getting_Started" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Proxylizer/Getting_Started" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+													<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+													<li id="t-print"><a href="/index.php?title=Proxylizer/Getting_Started&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+													<li id="t-permalink"><a href="/index.php?title=Proxylizer/Getting_Started&amp;oldid=21745" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="/index.php?title=Proxylizer/Getting_Started&amp;action=info">Page information</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 1 September 2011, at 17:26.</li>
+											<li id="footer-info-viewcount">This page has been accessed 225,576 times.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wiki/MikroTik_Wiki:Privacy_policy" title="MikroTik Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/MikroTik_Wiki:About" title="MikroTik Wiki:About">About MikroTik Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/MikroTik_Wiki:General_disclaimer" title="MikroTik Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-poweredbyico">
+															<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"http://wiki.mikrotik.com/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":84});
+}</script>
+	</body>
+</html>
+	
